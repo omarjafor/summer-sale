@@ -1,1 +1,3 @@
-console.log('Here i am connected');
+function refresh(){
+    location.reload(location.href="#");
+};

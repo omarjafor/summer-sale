@@ -265,16 +265,45 @@
             </div>
             <div class="w-[342px] ml-8 mr-auto mt-16 h-auto">
                 <div class="h-[148px] p-6 bg-[#FFFFFF]">
-                  <h2 class="text-2xl font-medium text-black">Have coupon?</h2>
-                  <input class="mt-4 py-4 px-4 rounded-l-lg w-[194px] border border-solid border-[#11111126]" type="text" placeholder="Coupon code"><button class="bg-[#E527B2] text-white font-semibold py-4 px-6 rounded-r-lg">Apply</button>
+                    <h2 class="text-2xl font-medium text-black">Have coupon?</h2>
+                    <input class="mt-4 py-4 px-4 rounded-l-lg w-[194px] border border-solid border-[#11111126]"
+                        type="text" placeholder="Coupon code"><button
+                        class="bg-[#E527B2] text-white font-semibold py-4 px-6 rounded-r-lg">Apply</button>
                 </div>
-                <div class="h-[416px] mt-6 bg-[#FFFFFF]">
-                  
+                <div class="h-[416px] mt-6 bg-[#FFFFFF] p-6">
+                    <ol
+                        class="list-decimal pl-5 text-[#111] font-medium text-2xl border-b border-solid border-[#11111126] pb-3 leading-[48px]">
+                        <li>Home Cooker</li>
+                        <li>Sports cates</li>
+                        <li>Home Cooker</li>
+                    </ol>
+                    <div class="font-medium text-2xl leading-[48px] mt-3 pb-6 border-b border-solid border-[#11111126]">
+                        <h2>Total Price: <span class="text-[#11111180]"><span>257.00</span>TK</span></h2>
+                        <h2>Discount: <span class="text-[#11111180]"><span>51.40</span>TK</span></h2>
+                        <h2>Total: <span class="text-[#11111180]"><span>205.60</span>TK</span></h2>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="#my_modal">
+                        <button class="bg-[#E527B2] text-white font-semibold py-4 px-[72px] rounded-lg">Make
+                            Purchase</button></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <!-- ............ Modal ............  -->
+    <div class="modal" id="my_modal">
+        <div class="modal-box text-center">
+          <figure class="flex justify-center"><img src="./images/congo.png" alt="congratulations" /></figure>
+          <h3 class="font-bold text-black text-4xl mb-4 mt-10">Congratulations</h3>
+          <p class="mb-10">Your Purchase the product</p>
+          <div class="modal-action flex justify-center items-center">
+           <a href="#" onclick="refresh()"><button class="btn bg-[#E527B2] border-none text-white hover:text-black py-4 px-10">Go Home</button></a>
+          </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
+
 
 </html>
