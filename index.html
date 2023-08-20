@@ -49,7 +49,7 @@
                 <h2 class="text-4xl font-bold text-[#1C1C1C] mb-5">Kitchenware</h2>
                 <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Card No - 1  -->
-                    <div class="card w-[342px] shadow-xl p-4 bg-[#FFFFFF] rounded-lg">
+                    <div class="card w-[342px] shadow-xl p-4 bg-[#FFFFFF] rounded-lg" onclick="card1()">
                         <figure class="bg-[#1111110D] p-5 w-[302px] h-[200px] text-center rounded-lg"><img
                                 src="./images/prod1.png" alt="Tea" /></figure>
                         <div class=" text-center">
@@ -67,8 +67,8 @@
                                 <input type="radio" name="Rating-1" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
                                 <input type="radio" name="Rating-1" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
                             </div>
-                            <h2 class="text-xl font-extrabold my-2">K. Accessories</h2>
-                            <p class="text-xl text-[#11111180]">39.00 TK</p>
+                            <h2 id="card1Name" class="text-xl font-extrabold my-2">K. Accessories</h2>
+                            <p class="text-xl text-[#11111180]"><span id="card1Price">39.00</span> TK</p>
                         </div>
                     </div>
                     <!-- Card No - 2  -->
@@ -266,25 +266,23 @@
             <div class="w-[342px] md:w-11/12 lg:w-[342px] ml-8 mr-auto mt-16 h-auto md:grid md:grid-cols-2 md:gap-6 lg:block">
                 <div class="h-[148px] p-6 bg-[#FFFFFF]">
                     <h2 class="text-2xl font-medium text-black">Have coupon?</h2>
-                    <input class="mt-4 py-4 px-4 rounded-l-lg w-[194px] border border-solid border-[#11111126]"
-                        type="text" placeholder="Coupon code"><button
-                        class="bg-[#E527B2] text-white font-semibold py-4 px-6 rounded-r-lg">Apply</button>
+                    <input id="couponBox" class="mt-4 py-4 px-4 rounded-l-lg w-[194px] border border-solid border-[#11111126]"
+                        type="text" placeholder="Coupon code"><button id="applyButton"
+                        class="bg-[#E527B2] text-white font-semibold py-4 px-6 rounded-r-lg" disabled>Apply</button>
                 </div>
                 <div class="h-[416px] mt-6 md:mt-0 lg:mt-6 bg-[#FFFFFF] p-6">
-                    <ol
+                    <ol id="entrylist"
                         class="list-decimal pl-5 text-[#111] font-medium text-2xl border-b border-solid border-[#11111126] pb-3 leading-[48px]">
-                        <li>Home Cooker</li>
-                        <li>Sports cates</li>
-                        <li>Home Cooker</li>
+                        
                     </ol>
                     <div class="font-medium text-2xl leading-[48px] mt-3 pb-6 border-b border-solid border-[#11111126]">
-                        <h2>Total Price: <span class="text-[#11111180]"><span>00.00</span>TK</span></h2>
-                        <h2>Discount: <span class="text-[#11111180]"><span>00.00</span>TK</span></h2>
-                        <h2>Total: <span class="text-[#11111180]"><span>00.00</span>TK</span></h2>
+                        <h2>Total Price: <span class="text-[#11111180]"><span id="totalPrice">00.00</span>TK</span></h2>
+                        <h2>Discount: <span class="text-[#11111180]"><span id="discountPrice">00.00</span>TK</span></h2>
+                        <h2>Total: <span class="text-[#11111180]"><span id="totalBalance">00.00</span>TK</span></h2>
                     </div>
                     <div class="text-center mt-6">
                         <a href="#my_modal">
-                        <button class="bg-[#E527B2] text-white font-semibold py-4 px-[72px] rounded-lg">Make
+                        <button id="makePurchase-btn" class="bg-[#E527B2] text-white font-semibold py-4 px-[72px] rounded-lg" disabled>Make
                             Purchase</button></a>
                     </div>
                 </div>
